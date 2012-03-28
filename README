@@ -1,0 +1,27 @@
+EditLite is a text editor for JavaME platform, it consists of 4 components:
+
+1.Text Editor
+
+support Unicode/UTF-8/GB2312 and transcoding among them.
+
+support common edit options,such as cut/copy/paste/delete/save/select/search/jump.
+
+2.Text Reader
+
+support open large-sized file.
+
+support bookmark.
+
+support paging.
+
+3.File Manager
+
+somewhat like Windows File Manager, support mv/rm/cp/rename/new/open/find.
+
+4.Customize
+
+support user customize the backgroup/theme/font.
+
+Due to the RAM limited in JavaME device, these was no text reader/editor for JavaME could handle large-sized text file, most of them simply load the whole file into RAM when open it.
+
+I implemented a light-weight memory management for EditLite, somewhat like the VM mechanism in the OS. So that EditLite can handle large-sized text file, independent of the platform's runtime RAM. 
